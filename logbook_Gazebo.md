@@ -1,8 +1,4 @@
 # Logbook for installation of Gazebo on M1 Macbook Pro
-Written by: Ingmar van de Sande<br>
-Date: 08-04-2025 (DD-MM-YYYY)<br>
-Laptop: M1 Pro Macbook Pro
-
 Gazebo on MacOS is actually pretty doable, because there is a native app. However, if you have a Macbook with a first generation Apple Silicon chip, as I do, it gets a little more complicated. This is because the rendering library that Gazebo uses, Ogre, is not exactly great friends with this generation of chips. After a long battle, I have a found a somewhat ugly, but workable solution. 
 
 ### Step 1: Installation preparation
@@ -26,8 +22,6 @@ brew tap osrf/simulation
 
 brew install assimp boost bullet cmake cppzmq dartsim doxygen eigen fcl ffmpeg flann freeimage freetype gdal gflags google-benchmark gts ipopt jsoncpp libccd libyaml libzzip libzip nlopt ode open-scene-graph ossp-uuid ogre1.9 ogre2.3 pkg-config protobuf qt@5 qwt-qt5 rapidjson ruby tbb tinyxml tinyxml2 urdfdom zeromq
 ```
-Hier installeren we een hoop dependencies die Gazebo nodig heeft. Ik zou hier sterk aanraden om alle suggesties die Brew doet met betrekking tot het toevoegen van Qt5 en Ruby tot je path allemaal op te volgen. 
-
 Here we're installing a bunch of dependencies Gazebo requires. I would strongly suggest following the on screen instructions in regards to adding Qt5 and Ruby to your path. Run all of them.
 
 Okay, now we have installed all required dependencies. 
